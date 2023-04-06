@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAFB99A629D88ABC00394FED /* GIB_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99A529D88ABC00394FED /* GIB_clientApp.swift */; };
+		BAFB99A829D88ABC00394FED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99A729D88ABC00394FED /* ContentView.swift */; };
+		BAFB99AA29D88ABE00394FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB99A929D88ABE00394FED /* Assets.xcassets */; };
+		BAFB99AD29D88ABE00394FED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB99AC29D88ABE00394FED /* Preview Assets.xcassets */; };
+		BAFB99B429D88C2100394FED /* IncidentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99B329D88C2100394FED /* IncidentCard.swift */; };
+		BAFB99B729D88E6100394FED /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99B629D88E6100394FED /* API.swift */; };
+		BAFB99BA29D88EF600394FED /* ListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99B929D88EF600394FED /* ListVM.swift */; };
+		BAFB99BD29D88F1D00394FED /* Incident.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99BC29D88F1D00394FED /* Incident.swift */; };
+		BAFB99BF29D8A43B00394FED /* AddIncident.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99BE29D8A43B00394FED /* AddIncident.swift */; };
+		BAFB99C129D8A47300394FED /* IncidentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99C029D8A47300394FED /* IncidentVM.swift */; };
+		BAFB99C329D8A8E500394FED /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99C229D8A8E500394FED /* ImagePicker.swift */; };
+		BAFB99C529D8F08500394FED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99C429D8F08500394FED /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAFB99A229D88ABC00394FED /* GIB-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GIB-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFB99A529D88ABC00394FED /* GIB_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIB_clientApp.swift; sourceTree = "<group>"; };
+		BAFB99A729D88ABC00394FED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAFB99A929D88ABE00394FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAFB99AC29D88ABE00394FED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAFB99B329D88C2100394FED /* IncidentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentCard.swift; sourceTree = "<group>"; };
+		BAFB99B629D88E6100394FED /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BAFB99B929D88EF600394FED /* ListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVM.swift; sourceTree = "<group>"; };
+		BAFB99BC29D88F1D00394FED /* Incident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incident.swift; sourceTree = "<group>"; };
+		BAFB99BE29D8A43B00394FED /* AddIncident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncident.swift; sourceTree = "<group>"; };
+		BAFB99C029D8A47300394FED /* IncidentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentVM.swift; sourceTree = "<group>"; };
+		BAFB99C229D8A8E500394FED /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BAFB99C429D8F08500394FED /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFB999F29D88ABC00394FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAFB999929D88ABC00394FED = {
+			isa = PBXGroup;
+			children = (
+				BAFB99A429D88ABC00394FED /* GIB-client */,
+				BAFB99A329D88ABC00394FED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFB99A329D88ABC00394FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99A229D88ABC00394FED /* GIB-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFB99A429D88ABC00394FED /* GIB-client */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99BB29D88F1200394FED /* Models */,
+				BAFB99B829D88EB900394FED /* ViewModels */,
+				BAFB99B529D88E5100394FED /* Services */,
+				BAFB99A529D88ABC00394FED /* GIB_clientApp.swift */,
+				BAFB99C229D8A8E500394FED /* ImagePicker.swift */,
+				BAFB99C429D8F08500394FED /* MapView.swift */,
+				BAFB99B329D88C2100394FED /* IncidentCard.swift */,
+				BAFB99BE29D8A43B00394FED /* AddIncident.swift */,
+				BAFB99A729D88ABC00394FED /* ContentView.swift */,
+				BAFB99A929D88ABE00394FED /* Assets.xcassets */,
+				BAFB99AB29D88ABE00394FED /* Preview Content */,
+			);
+			path = "GIB-client";
+			sourceTree = "<group>";
+		};
+		BAFB99AB29D88ABE00394FED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99AC29D88ABE00394FED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAFB99B529D88E5100394FED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99B629D88E6100394FED /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAFB99B829D88EB900394FED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99B929D88EF600394FED /* ListVM.swift */,
+				BAFB99C029D8A47300394FED /* IncidentVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BAFB99BB29D88F1200394FED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB99BC29D88F1D00394FED /* Incident.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFB99A129D88ABC00394FED /* GIB-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFB99B029D88ABE00394FED /* Build configuration list for PBXNativeTarget "GIB-client" */;
+			buildPhases = (
+				BAFB999E29D88ABC00394FED /* Sources */,
+				BAFB999F29D88ABC00394FED /* Frameworks */,
+				BAFB99A029D88ABC00394FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GIB-client";
+			productName = "GIB-client";
+			productReference = BAFB99A229D88ABC00394FED /* GIB-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFB999A29D88ABC00394FED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BAFB99A129D88ABC00394FED = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BAFB999D29D88ABC00394FED /* Build configuration list for PBXProject "GIB-client" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFB999929D88ABC00394FED;
+			productRefGroup = BAFB99A329D88ABC00394FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFB99A129D88ABC00394FED /* GIB-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFB99A029D88ABC00394FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB99AD29D88ABE00394FED /* Preview Assets.xcassets in Resources */,
+				BAFB99AA29D88ABE00394FED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFB999E29D88ABC00394FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB99B429D88C2100394FED /* IncidentCard.swift in Sources */,
+				BAFB99BD29D88F1D00394FED /* Incident.swift in Sources */,
+				BAFB99BA29D88EF600394FED /* ListVM.swift in Sources */,
+				BAFB99C329D8A8E500394FED /* ImagePicker.swift in Sources */,
+				BAFB99A829D88ABC00394FED /* ContentView.swift in Sources */,
+				BAFB99B729D88E6100394FED /* API.swift in Sources */,
+				BAFB99BF29D8A43B00394FED /* AddIncident.swift in Sources */,
+				BAFB99C529D8F08500394FED /* MapView.swift in Sources */,
+				BAFB99C129D8A47300394FED /* IncidentVM.swift in Sources */,
+				BAFB99A629D88ABC00394FED /* GIB_clientApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAFB99AE29D88ABE00394FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAFB99AF29D88ABE00394FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAFB99B129D88ABE00394FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GIB-client/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nanimir.GIB-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAFB99B229D88ABE00394FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GIB-client/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nanimir.GIB-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFB999D29D88ABC00394FED /* Build configuration list for PBXProject "GIB-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB99AE29D88ABE00394FED /* Debug */,
+				BAFB99AF29D88ABE00394FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFB99B029D88ABE00394FED /* Build configuration list for PBXNativeTarget "GIB-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB99B129D88ABE00394FED /* Debug */,
+				BAFB99B229D88ABE00394FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFB999A29D88ABC00394FED /* Project object */;
+}
