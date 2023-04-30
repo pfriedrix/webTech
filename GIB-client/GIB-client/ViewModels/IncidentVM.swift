@@ -39,7 +39,45 @@ class IncidentVM: ObservableObject {
             }
         }
     }
+    
+    func createJSONRPC(_ completion: @escaping (Result<Bool, Error>) -> Void) {
+        guard incident.file.count > 0 else {
+            print("No file")
+            completion(.failure(NSError(domain: "No file", code: 0, userInfo: nil)))
+            return
+        }
+        
+        let file: [String: Any] = [
+            "data": incident.file.base64EncodedString(),
+            "filename": "image.png"
+        ]
+        
+        let incident: [String: Any] = [
+            "description": incident.description,
+            "latitude": incident.latitude,
+            "longitude": incident.longitude,
+            "file": file,
+        ]
+        
+        let body: [String: Any] = [
+            "jsonrpc": "2.0",
+            "method": "create",
+            "id": 1,
+            "params": incident
+        ]
+        
+        let jsonrpcURL = urlString + "/jsonrpc"
+        API.shared.post(url: jsonrpcURL, body: body) { (result: Result<JSONRPCResponse, Error>) in
+            switch result {
+            case .success(let incident):
+                print(incident)
+                completion(.success(true))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
 }
 
-// completion or complation ?
 

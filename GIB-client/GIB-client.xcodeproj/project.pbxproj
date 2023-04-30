@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA6BAE7429F8868A00C439F3 /* JSONRPCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6BAE7329F8868A00C439F3 /* JSONRPCResponse.swift */; };
 		BAFB99A629D88ABC00394FED /* GIB_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99A529D88ABC00394FED /* GIB_clientApp.swift */; };
 		BAFB99A829D88ABC00394FED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB99A729D88ABC00394FED /* ContentView.swift */; };
 		BAFB99AA29D88ABE00394FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB99A929D88ABE00394FED /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA6BAE7329F8868A00C439F3 /* JSONRPCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRPCResponse.swift; sourceTree = "<group>"; };
 		BAFB99A229D88ABC00394FED /* GIB-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GIB-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFB99A529D88ABC00394FED /* GIB_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIB_clientApp.swift; sourceTree = "<group>"; };
 		BAFB99A729D88ABC00394FED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BAFB99BC29D88F1D00394FED /* Incident.swift */,
+				BA6BAE7329F8868A00C439F3 /* JSONRPCResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAFB99B429D88C2100394FED /* IncidentCard.swift in Sources */,
+				BA6BAE7429F8868A00C439F3 /* JSONRPCResponse.swift in Sources */,
 				BAFB99BD29D88F1D00394FED /* Incident.swift in Sources */,
 				BAFB99BA29D88EF600394FED /* ListVM.swift in Sources */,
 				BAFB99C329D8A8E500394FED /* ImagePicker.swift in Sources */,

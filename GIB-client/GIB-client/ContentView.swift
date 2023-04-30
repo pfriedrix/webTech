@@ -40,7 +40,7 @@ struct ContentView: View {
                 }
             }
             .onAppear {
-                listVM.getList()
+                listVM.getJSONRPCList()
             }
         }
     }

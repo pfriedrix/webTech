@@ -15,7 +15,6 @@ class ListVM: ObservableObject {
     
     func getList() {
         guard !isLoading else {
-            isLoading = true
             return
         }
         
@@ -33,6 +32,42 @@ class ListVM: ObservableObject {
                     print(error)
                 }
                 self.isLoading = false
+            }
+        }
+    }
+    
+    func getJSONRPCList() {
+        guard !isLoading else {
+            return
+        }
+        
+        isLoading = true
+        let jsonrpcURL = urlString + "/jsonrpc"
+        
+        let body: [String: Any] = [
+            "jsonrpc": "2.0",
+            "method": "getAll",
+            "params": [:],
+            "id": 1
+        ]
+        
+        API.shared.post(url: jsonrpcURL, body: body) { [weak self ] (resp: Result<JSONRPCResponse, Error>) in
+            guard let self = self else { return }
+            defer {
+                DispatchQueue.main.async {
+                    self.isLoading = false
+                }
+            }
+            switch resp {
+            case .success(let response):
+                switch response.result {
+                case .success(let result):
+                    self.incidents = result as? [Incident] ?? []
+                case .failure(let error):
+                    print(error.message)
+                }
+            case .failure(let error):
+                print(error)
             }
         }
     }

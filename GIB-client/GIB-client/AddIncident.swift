@@ -11,7 +11,7 @@ import MapKit
 struct AddIncident: View {
     @Environment(\.dismiss) var dismiss
     @ObservedObject var incidentVM = IncidentVM()
-    @State var image: UIImage?
+    @State var image: UIImage? = UIImage(named: "coin")
     @State var selectedCoordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     @State var sheet = false
     var body: some View {
@@ -46,19 +46,23 @@ struct AddIncident: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    print(selectedCoordinate)
-                    guard let image = image?.pngData() else { return }
-                    incidentVM.incident.file = image
+                    guard let image = image, let file = image.pngData() else {
+                        print("no photo")
+                        return
+                    }
+                    incidentVM.incident.file = file
                     incidentVM.incident.longitude = selectedCoordinate.longitude
                     incidentVM.incident.latitude = selectedCoordinate.latitude
-                    incidentVM.create { result in
+                    incidentVM.createJSONRPC { result in
                         switch result {
-                        case .success(let incident):
-                            print(incident)
+                        case .success(let _):
+                            break
                         case .failure(let error):
                             print(error)
                         }
-                        dismiss()
+                        DispatchQueue.main.async {
+                            dismiss()
+                        }
                     }
                 } label: {
                     Text("Save")
